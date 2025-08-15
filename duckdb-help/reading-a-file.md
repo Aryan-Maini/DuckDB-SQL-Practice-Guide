@@ -1,11 +1,11 @@
 ### Reading a csv
 
-~~~duckdb
+~~~sql
 SELECT * FROM read_csv('datasets/helloworld.csv');
 ~~~
 
 #### parquet
-~~~duckdb
+~~~sql
 SELECT * FROM read_parquet('input.parquet');
 ~~~
 

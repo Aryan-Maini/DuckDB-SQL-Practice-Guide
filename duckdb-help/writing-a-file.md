@@ -1,11 +1,20 @@
 ### for the course we are using csv, parquet
 #### csv
-~~~duckdb
+~~~sql
 COPY tbl TO 'output.csv' (HEADER, DELIMITER ',');
+
+COPY (SELECT * FROM tbl) TO 'output.csv' (HEADER, DELIMITER ',');
+
+-- Note that COPY comes outer most
+COPY (
+    WITH PARTYTIME AS (...)
+    SELECT * FROM  PARTYTIME
+) TO 'output.csv' (HEADER, DELIMITER ',')
 ~~~
 
+
 #### parquet
-~~~duckdb
+~~~sql
 COPY tbl TO 'output.parquet' (FORMAT parquet);
 ~~~
 

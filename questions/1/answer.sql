@@ -1,1 +1,1 @@
-SELECT * FROM read_csv('datasets/helloworld.csv');
+SELECT *, 1 FROM read_csv('datasets/helloworld.csv');

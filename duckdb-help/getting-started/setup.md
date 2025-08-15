@@ -4,7 +4,7 @@ curl https://install.duckdb.org | bash
 ~~~
 
 to check use
-~~~
+~~~bash
 duckdb --help
 ~~~
 

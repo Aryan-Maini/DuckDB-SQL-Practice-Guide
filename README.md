@@ -1,8 +1,12 @@
-# PracticeSQL
-I crafted SQL Questions for fun, they are medium level with CTEs 
+# DuckDB Course with SQL Practice
 
-I hope you use this free resource
+This course is in the works,
+but there is enough introductory material to get you started.
 
-~~~
-pip install duckdb
-~~~
+After completing this course,
+You will be able to:
+- Work with DuckDB a modern OLAP (Analytical) Database
+- Hone your SQL Skills since it's a non negotiable (In Progress)
+- use duckdb in python (In progress)
+
+I hope you use this free resource.
