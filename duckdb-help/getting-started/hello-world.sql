@@ -1,0 +1,1 @@
+SELECT 'HELLO WORLD' AS greeting;
