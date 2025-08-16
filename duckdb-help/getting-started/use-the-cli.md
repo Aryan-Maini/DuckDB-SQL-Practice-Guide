@@ -16,9 +16,13 @@ duckdb -f filename
 
 ![Example of running a sql script in CLI using duckdb](image.png)
 
-##### Run this
+#### Run this
 ~~~bash
 duckdb -f duckdb-help/getting-started/hello-world.sql
 ~~~
+#### Using a Database file
+~~~bash
+duckdb datasets/db.duckdb -f /workspaces/PracticeSQL/questions/4/solution.sql
+~~~ 
 
 #### If you got this you can head to [reading a file](../reading-a-file.md)

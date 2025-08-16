@@ -2,7 +2,10 @@
 
 # --- DuckDB Answer Checker Script ---
 # This script compares the output of a student's SQL answer
-# with a provided solution using DuckDB.
+# with a provided solution using a persistent DuckDB database.
+
+# Define the path to the DuckDB database file.
+DATABASE_FILE="datasets/db.duckdb"
 
 # Check if a question number was provided as an argument.
 if [ -z "$1" ]; then
@@ -29,13 +32,20 @@ if [ ! -f "$SOLUTION_FILE" ]; then
     exit 1
 fi
 
+# Check if the database file exists.
+if [ ! -f "$DATABASE_FILE" ]; then
+    echo "Error: The database file '${DATABASE_FILE}' does not exist."
+    exit 1
+fi
+
 echo "Checking question #${QUESTION_NUMBER}..."
 
 # --- Step 2: Run both SQL files and capture their output. ---
 # The `-box` option ensures consistent, text-based output that is easy to compare.
 # We redirect the output to temporary files.
-duckdb -box < "$ANSWER_FILE" > "temp_answer_output.txt"
-duckdb -box < "$SOLUTION_FILE" > "temp_solution_output.txt"
+# The database file path is now provided as the first argument to duckdb.
+duckdb "${DATABASE_FILE}" -box -c ".read ${ANSWER_FILE}" > "temp_answer_output.txt"
+duckdb "${DATABASE_FILE}" -box -c ".read ${SOLUTION_FILE}" > "temp_solution_output.txt"
 
 # --- Step 3: Compare the two output files using `diff`. ---
 # The `-q` flag for `diff` runs quietly, only reporting if the files differ.
