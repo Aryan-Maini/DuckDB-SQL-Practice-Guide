@@ -1,13 +1,18 @@
-### Week Streak
-#### Hard Question
-##### Type: Pure SQL + Reading a file
+### Question 3
 
-Github wants to give awards to consistent users
+### **Week Streak Awards**
+#### **Difficulty:** Hard | **Type:** Pure SQL
 
-#### Some Business logic:
-- A github week is a week where the user has contributed for at least 3 days
-- A github Year is a Year where at least 20 Github Weeks
+As a data analyst at GitHub, your task is to identify users who qualify for the "Year of Consistency" award. To earn this award, a user must have at least 20 "GitHub Weeks" in a single year.
 
-#### Objective:
-- Even though it's possible to use a non CTE Solution, CTE is recommended for readablity
-- The Output should have columns PERSON_ID and WEEK_COUNT
+**Here's the business logic you need to apply:**
+* A **"GitHub Week"** is defined as any week where a user contributed for at least 3 days.
+* A **"Year of Consistency"** is a year that contains at least 20 "GitHub Weeks."
+
+**Your challenge:** Write a single, clean SQL query that identifies all users who have achieved a "Year of Consistency." Although it's possible to solve this without them, **using Common Table Expressions (CTEs) is highly recommended** for readability and to break down the problem into logical steps.
+
+**The final output should contain two columns:**
+* `PERSON_ID` (the user's identifier)
+* `WEEK_COUNT` (the total number of "GitHub Weeks" for that user in the year)
+
+---
