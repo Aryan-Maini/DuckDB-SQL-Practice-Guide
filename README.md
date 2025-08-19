@@ -1,6 +1,6 @@
 # DuckDB Course with SQL Practice
 
-This course is in the works,
+This DuckDB SQL Practice Workbook is in the works,
 but there is enough introductory material to get you started.
 
 After completing this course,

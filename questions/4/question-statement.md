@@ -1,6 +1,6 @@
 ### **Handle Invalid Date Casting**
 
-#### **Difficulty:** Medium | **Type:** Pure SQL
+#### **Difficulty:** Easy
 
 **Task:**
 Cast the `DATE` column in the `dates` table to the `DATE` data type. Be aware that the column contains at least one value that is not a valid date.

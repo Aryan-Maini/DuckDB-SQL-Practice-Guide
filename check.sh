@@ -5,7 +5,7 @@
 # with a provided solution using a persistent DuckDB database.
 
 # Define the path to the DuckDB database file.
-DATABASE_FILE="datasets/db.duckdb"
+DATABASE_FILE=$2
 
 # Check if a question number was provided as an argument.
 if [ -z "$1" ]; then
@@ -24,6 +24,11 @@ SOLUTION_FILE="questions/${QUESTION_NUMBER}/solution.sql"
 # --- Step 1: Validate that the required files exist. ---
 if [ ! -f "$ANSWER_FILE" ]; then
     echo "Error: The answer file '${ANSWER_FILE}' does not exist."
+    exit 1
+fi
+
+if [ ! -s "$answer_file" ] ; then
+    echo "Error: The answer file '${ANSWER_FILE}' is empty."
     exit 1
 fi
 

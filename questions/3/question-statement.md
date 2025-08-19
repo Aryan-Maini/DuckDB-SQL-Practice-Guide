@@ -1,7 +1,7 @@
 ### Question 3
 
 ### **Week Streak Awards**
-#### **Difficulty:** Hard | **Type:** Pure SQL
+#### **Difficulty:** Hard
 
 As a data analyst at GitHub, your task is to identify users who qualify for the "Year of Consistency" award. To earn this award, a user must have at least 20 "GitHub Weeks" in a single year.
 

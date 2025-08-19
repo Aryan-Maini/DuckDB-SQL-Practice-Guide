@@ -1,5 +1,6 @@
 Usually this will be enough
 ~~~
+# Paste below in the terminal
 curl https://install.duckdb.org | bash
 ~~~
 
