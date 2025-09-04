@@ -1,12 +1,13 @@
-# DuckDB Course with SQL Practice
+![DuckDB Guide on Github](getting-started/Banner.png)
 
-This DuckDB SQL Practice Workbook is in the works,
-but there is enough introductory material to get you started.
+This DuckDB SQL Practice Workbook
 
 After completing this course,
 You will be able to:
 - Work with DuckDB a modern OLAP (Analytical) Database
-- Hone your SQL Skills since it's a non negotiable (In Progress)
+- Hone your SQL Skills
 - use duckdb in python (In progress)
 
 I hope you use this free resource.
+
+<!---[Get Started Here](/getting-started/) --->

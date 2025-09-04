@@ -1,3 +1,4 @@
 dev
 craft
-**/*.wal
+*.wal
+questions/window_function_mini_course
