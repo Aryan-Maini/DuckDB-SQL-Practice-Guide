@@ -1,8 +1,6 @@
 ![DuckDB Guide on Github](getting-started/Banner.png)
 
-This DuckDB SQL Practice Workbook
-
-After completing this course,
+After completing this guide,
 You will be able to:
 - Work with DuckDB a modern OLAP (Analytical) Database
 - Hone your SQL Skills
