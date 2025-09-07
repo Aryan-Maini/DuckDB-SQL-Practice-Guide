@@ -1,6 +1,12 @@
-Usually this will be enough
+## this guide provides a script for setup 
+~~~bash
+# Paste this in terminal
+chmod +x start-learning.sh
+./start-learning.sh
 ~~~
-# Paste below in the terminal
+## Here is how to install DuckDB yourself
+~~~bash
+# for reference
 curl https://install.duckdb.org | bash
 ~~~
 

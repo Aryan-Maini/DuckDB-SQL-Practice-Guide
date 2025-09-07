@@ -20,6 +20,14 @@ duckdb -f filename
 ~~~bash
 duckdb -f getting-started/hello-world.sql
 ~~~
+Alternatively
+```sh
+duckdb
+# You have entered the CLI
+.read getting-started/hello-world.sql
+.exit
+# you exited
+```
 #### Using a Database file
 ~~~bash
 duckdb datasets/db.duckdb -f /workspaces/PracticeSQL/questions/4/solution.sql
