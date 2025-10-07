@@ -1,4 +1,4 @@
-![DuckDB Guide on Github](getting-started/Banner.png)
+![DuckDB Guide on Github](static/tale.jpg)
 
 
 ## What is This Repository?
@@ -10,5 +10,6 @@ You will be able to:
 - Hone your SQL Skills
 - use duckdb in python
 
+### Update: The course now follows chapter wise structure themed <span style="color:#fff000">*The tale of the duck*</span>
 
 # Get started [here](getting-started/start-here.md)

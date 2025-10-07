@@ -11,26 +11,24 @@ duckdb --help
 
 2. in the CLI enter
 ~~~bash
-duckdb -f filename
-~~~
+# simple structure of running a file
+duckdb -f <filename>
 
-![Example of running a sql script in CLI using duckdb](image.png)
-
-#### Run this
-~~~bash
+# for example, run this in the terminal 
 duckdb -f getting-started/hello-world.sql
-~~~
-Alternatively
-```sh
-duckdb
-# You have entered the CLI
-.read getting-started/hello-world.sql
-.exit
-# you exited
-```
+
 #### Using a Database file
 ~~~bash
 duckdb datasets/db.duckdb -f /workspaces/PracticeSQL/questions/4/solution.sql
 ~~~ 
+
+### This course has provided a script to check your answer, which uses duckdb CLI in the background.
+
+~~~bash
+# running a script
+./check.sh 4 datasets/date.duckdb
+# check.sh will find the answer.sql and solution.sql file in the folder named 1 and run it using duckdb CLI, then compare the output
+# Please provide the duckdb file to this script
+~~~
 
 #### If you got this you can head to [reading a file](../duckdb-help/reading-a-file.md)
