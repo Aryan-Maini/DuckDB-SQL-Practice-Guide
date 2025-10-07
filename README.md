@@ -11,5 +11,3 @@ You will be able to:
 - use duckdb in python
 
 ### Update: The course now follows chapter wise structure themed <span style="color:#fff000">*The tale of the duck*</span>
-
-# Get started [here](getting-started/start-here.md)
