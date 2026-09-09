@@ -15,4 +15,10 @@ As a data analyst at GitHub, your task is to identify users who qualify for the 
 * `PERSON_ID` (the user's identifier)
 * `WEEK_COUNT` (the total number of "GitHub Weeks" for that user in the year)
 
----
+-----
+
+### How to Run Your Solution
+
+```bash
+duckdb -f questions/3/answer.sql
+```

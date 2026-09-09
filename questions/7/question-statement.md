@@ -16,3 +16,11 @@ SELECT IS_WEEKEND('2024-08-19') AS is_weekend; -- Should return FALSE (Monday)
 
 ### Bonus
 #### create this macro in the `dates.duckdb` file, then solve question 2 using this function
+
+-----
+
+### How to Run Your Solution
+
+```bash
+duckdb -f questions/7/answer.sql
+```

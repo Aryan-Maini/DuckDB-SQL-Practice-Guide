@@ -30,7 +30,12 @@ duckdb
 ```
 #### Using a Database file
 ~~~bash
-duckdb datasets/db.duckdb -f /workspaces/PracticeSQL/questions/4/solution.sql
+duckdb datasets/date.duckdb -f questions/4/solution.sql
 ~~~ 
+
+#### Using the -c flag
+~~~bash
+duckdb -c "SELECT 'hello world';"
+~~~
 
 #### If you got this you can head to [reading a file](../duckdb-help/reading-a-file.md)

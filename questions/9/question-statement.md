@@ -14,3 +14,13 @@ FROM 'https://raw.githubusercontent.com/datasets/s-and-p-500/refs/heads/main/dat
 - use `httpfs`
 - Read data from this [URL](https://raw.githubusercontent.com/datasets/s-and-p-500/refs/heads/main/data/data.csv) 
 - Write to datasets/s&p.csv
+
+-----
+
+### How to Run Your Solution
+
+```bash
+duckdb -f questions/9/answer.sql
+```
+
+

@@ -1,10 +1,11 @@
+#!/bin/bash
 # Run this script to setup your learning environment
 # we recommend using github codespaces
 
-# #!/bin/bash
 chmod +x check.sh
+chmod +x new-question.sh
 
-# # download duckdb CLI
+# download duckdb CLI
 curl https://install.duckdb.org | bash
 
 duckdb --version

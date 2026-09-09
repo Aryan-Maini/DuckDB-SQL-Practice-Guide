@@ -13,12 +13,6 @@ Your query must run successfully without throwing an error due to the invalid da
 
 ### How to Run Your Solution
 
-```
-You will need to use the provided database file for this question.
-
-To run your query, use the following command:
-
-~~~bash
-duckdb datasets/db.duckdb -f /workspaces/PracticeSQL/questions/4/solution.sql
-~~~
-```
+```bash
+duckdb datasets/date.duckdb -f questions/4/answer.sql
+```

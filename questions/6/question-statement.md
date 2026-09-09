@@ -16,11 +16,11 @@ This challenge requires you to write two separate `UPDATE` statements to modify 
 -----
 
   * **Hint:** If you need help with the `TRY_CAST()` function, you can refer to the [documentation on casting](https://duckdb.org/docs/stable/sql/expressions/cast). For the `today()` function, you'll find details in the [documentation on date functions](https://duckdb.org/docs/stable/sql/functions/date).
-  * **Remember:** You'll need to use the provided database file for this question.
+
+-----
+
+### How to Run Your Solution
 
 ```bash
-duckdb datasets/db.duckdb -f questions/5/solution.sql
-```
-
-  * `duckdb datasets/db.duckdb`: This part starts the DuckDB CLI and tells it to open or connect to the `db.duckdb` file located in the `datasets` directory.
-  * `-f questions/5/solution.sql`: The `-f` flag specifies that DuckDB should execute all the SQL statements within the `solution.sql` file. This file is assumed to be located in the `questions/5/` directory.
+duckdb datasets/db.duckdb -f questions/6/answer.sql
+```

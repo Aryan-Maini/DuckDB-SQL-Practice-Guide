@@ -9,8 +9,8 @@ Write a DuckDB SQL statement that uses `EXPLAIN` to show the query plan for an i
 - You may use the `FROM ... INNER JOIN ... ON ...` syntax.
 
 **References:**
-- [DuckDB EXPLAIN documentation](https://duckdb.org/docs/sql/statements/explain.html)
-- [DuckDB JOIN documentation](https://duckdb.org/docs/sql/query_syntax/join.html)
+- [DuckDB EXPLAIN documentation](https://duckdb.org/docs/stable/sql/statements/explain)
+- [DuckDB JOIN documentation](https://duckdb.org/docs/stable/sql/query_syntax/join)
 
 **Example:**
 ```sql
@@ -20,3 +20,11 @@ EXPLAIN (
     ...
 )
 ```
+
+-----
+
+### How to Run Your Solution
+
+```bash
+duckdb datasets/gaming.duckdb -f questions/8/answer.sql
+```
